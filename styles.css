@@ -1,0 +1,240 @@
+/* Type Selectors */
+
+body {
+  background-color: #444;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+/* Class Selectors */
+
+.navbar {
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+
+.navbar-right {
+  margin-right: 50px;
+}
+
+.bg-stationary {
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-filter: grayscale(100%);
+  transition: .5s;
+}
+
+.bg-stationary:hover {
+  -webkit-filter: grayscale(0%);
+  transition: .5s;
+}
+
+.title {
+  border-bottom: 2px solid;
+  font-family: 'Open Sans';
+  font-size: 4em;
+  padding-bottom: 10px;
+}
+
+.title-text {
+  color: #3D9970;
+}
+
+.title-shadow {
+  text-shadow: 3px 3px 2px #111;
+}
+
+.title-border {
+  letter-spacing: 1.5px;
+  padding: 0 40px 20px;
+  border-color: #333;
+}
+
+.subtitle {
+  font-family: 'PT Sans Caption';
+  margin-top: 40px;
+}
+
+.buttons {
+  display: table;
+  margin: 100px auto 20px;
+}
+
+
+.fa:hover {
+  transition: .5s;
+}
+
+.abt {
+  color: #3e62ad;
+  display: block;
+  margin: 20px;
+  padding: 0px;
+  border-color: #999;
+}
+
+.abt-text-bg {
+  background-color: rgba(0,0,0,.7);
+  border-radius: 10px 50px;
+  padding: 20px;
+}
+
+.abt-text {
+  color: rgba(74, 207, 238, 0.8);
+  font-size: 1.75em;
+  text-align: justify;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 2px #111;
+}
+
+.folio-title {
+  display: block;
+  color: #3e62ad;
+}
+
+.folio {
+  background-color: rgba(0,48,78,0.8);
+  border-radius: 25px 10px;
+  border-top: 5px solid #222;
+  margin: 50px 0 0;
+  padding: 50px 50px 0;
+}
+
+.thumbnail {
+  display: inline-block;
+  margin: 5px 0;
+  max-width: 100%;
+}
+
+.caption {
+  background-color: #222;
+  border-radius: 5px;
+  color: #ccc;
+  margin: 0 5px 50px;
+  min-height: 320px;
+  padding-top: 5px;
+  text-align: center;
+  transition: .3s;
+}
+
+.caption:hover {
+  background-color: rgba(0,0,0,.7);
+  box-shadow: 0 0 0 2px #1e90ff, 5px 5px 2px 3px #000;
+  transition: .5s;
+}
+
+.caption-text {
+  display: inline-block;
+  font-family: 'PT Sans Caption';
+  font-size: 1.75em;
+  padding-bottom: 10px;
+}
+
+.contact-text {
+  background-color: rgba(0,0,0,.7);
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 15px;
+  text-align: center;
+}
+
+#contact .buttons {
+  margin-top: 100px;
+}
+
+#contact .btn {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0px 30px;
+  letter-spacing: 1.5px;
+  padding: 10px 18px;
+  transition: .5s;
+}
+
+#contact .btn:hover {
+  box-shadow: 0 0 2px 2px #3c763d, 0 0 2px 3px #3D9970;
+  transition: 1s;
+}
+
+.btn-text {
+  font-family: 'Open Sans';
+  font-size: 20px;
+}
+
+.footer-text {
+  color: #aaa;
+  margin: 25px 0;
+}
+
+/* ID Selectors */
+
+#header {
+  box-shadow: 0px 2px 2px;
+}
+
+#top {
+  background: #444 url('http://res.cloudinary.com/hitoshura/image/upload/v1459784289/road-street-desert-industry_eqg2hp.jpg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  min-height: 800px;
+  padding: 200px 100px 100px;
+  text-align: center;
+}
+
+#about {
+  background-image: url('https://static.pexels.com/photos/34600/pexels-photo.jpg');
+  background-size: cover;
+  border-top: 3px solid;
+  padding: 50px 100px 100px;
+  -webkit-filter: grayscale(100%);
+  transition: .5s;
+}
+
+#about:hover {
+  -webkit-filter: grayscale(0%);
+  transition: .5s;
+}
+
+#portfolio {
+  background-image: url('http://res.cloudinary.com/hitoshura/image/upload/v1459785334/picjumbo.com_HNCK5096_nvsiga.jpg');
+  background-size: cover;
+  border-top: 3px solid;
+  padding: 50px 100px 100px;
+  text-align: right;
+}
+
+#contact {
+  background-image: url('http://res.cloudinary.com/hitoshura/image/upload/v1459785818/writing-923404_1920_jdwf8e.jpg');
+  background-size: cover;
+  background-position: center top;
+  border-top: 3px solid;
+  padding: 50px 100px 100px;
+  text-align: center;
+}
+
+#footer {
+  min-height: 100px;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .navbar-header {
+    margin-left: 20px !important;
+  }
+}
+
+@media (max-width: 1523px) {
+  .caption-text {
+    min-height: 3.5em;
+  }
+}
