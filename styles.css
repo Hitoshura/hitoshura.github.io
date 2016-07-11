@@ -12,15 +12,12 @@ ul {
   list-style-position: inside;
 }
 
+
 /* Class Selectors */
 
 .navbar {
   border-radius: 3px;
   margin-bottom: 2px;
-}
-
-.navbar-right {
-  margin-right: 50px;
 }
 
 .bg-stationary {
@@ -66,7 +63,6 @@ ul {
   margin: 100px auto 20px;
 }
 
-
 .fa:hover {
   transition: .5s;
 }
@@ -80,7 +76,7 @@ ul {
 }
 
 .abt-text-bg {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   border-radius: 10px 50px;
   padding: 20px;
 }
@@ -101,7 +97,7 @@ ul {
 }
 
 .folio {
-  background-color: rgba(0,48,78,0.8);
+  background-color: rgba(0, 48, 78, 0.8);
   border-radius: 25px 10px;
   border-top: 5px solid #222;
   margin: 50px 0 0;
@@ -126,7 +122,7 @@ ul {
 }
 
 .caption:hover {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   box-shadow: 0 0 0 2px #1e90ff, 5px 5px 2px 3px #000;
   transition: .5s;
 }
@@ -139,7 +135,7 @@ ul {
 }
 
 .contact-text {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   border-radius: 10px;
   margin-top: 50px;
   padding: 15px;
@@ -150,29 +146,37 @@ ul {
   margin-top: 100px;
 }
 
-#contact .btn {
+.contact-btn {
   display: inline-block;
-  font-size: 25px;
+  font-family: 'Open Sans';
+  font-size: 20px;
   margin: 0px 30px;
   letter-spacing: 1.5px;
   padding: 10px 18px;
   transition: .5s;
 }
 
-#contact .btn:hover {
+.contact-btn:hover {
   box-shadow: 0 0 2px 2px #3c763d, 0 0 2px 3px #3D9970;
-  transition: 1s;
+  transition: .25s;
 }
 
-.btn-text {
+
+/* .fa {
+  font-size: 25px;
+} */
+
+
+/* .btn-text {
   font-family: 'Open Sans';
   font-size: 20px;
-}
+} */
 
 .footer-text {
   color: #aaa;
   margin: 25px 0;
 }
+
 
 /* ID Selectors */
 
@@ -225,6 +229,7 @@ ul {
   min-height: 100px;
 }
 
+
 /* Media Queries */
 
 @media (min-width: 768px) {
@@ -237,4 +242,63 @@ ul {
   .caption-text {
     min-height: 3.5em;
   }
+}
+
+/***************************
+NAVBAR
+***************************/
+
+.navbar-brand {
+  float: none;
+}
+.navbar-nav .nav-item {
+  float: none;
+}
+.navbar-nav .nav-item+.nav-item {
+  margin-left: 0;
+}
+.divider {
+  box-shadow: 0 1px #666;
+  width: 100%;
+}
+@media (min-width: 34em) {
+  .navbar-brand {
+    float: left;
+  }
+  .navbar-nav .nav-item {
+    float: left;
+  }
+  .navbar-nav .nav-item+.nav-item {
+    margin-left: 1rem;
+  }
+  .divider {
+    display: none;
+  }
+}
+
+/* Icon Bar for Toggle Button */
+
+.navbar-toggler {
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+.navbar-toggler:hover {
+  background-color: #666;
+}
+.navbar-toggler .icon-bar {
+  background-color: #fff;
+}
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
 }
